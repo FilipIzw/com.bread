@@ -22,6 +22,8 @@ class BreadFrame extends JFrame
     private static final int DEFAULT_HEIGHT = 400;
     private JPanel panel;
     private JLabel label;
+    private JPanel southPanel;
+    private JLabel southLabel;
 
     public BreadFrame()
     {
@@ -31,5 +33,10 @@ class BreadFrame extends JFrame
         label = new JLabel("Our bread is the best");
         panel.add(label);
         add(panel, BorderLayout.CENTER);
+
+        southPanel = new JPanel();
+        southLabel = new JLabel("Swiezutkie buleczki");
+        southPanel.add(southLabel);
+        add(southPanel, BorderLayout.SOUTH);
     }
 }
